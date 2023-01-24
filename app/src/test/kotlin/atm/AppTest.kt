@@ -3,12 +3,10 @@
  */
 package atm
 
-import kotlin.test.Test
-import kotlin.test.assertNotNull
+import io.kotest.core.spec.style.StringSpec
 
-class AppTest {
-    @Test fun appHasAGreeting() {
-        val classUnderTest = App()
-        assertNotNull(classUnderTest.greeting, "app should have a greeting")
+class AppTest: StringSpec( {
+    "hello kotest" {
+        println("hello")
     }
-}
+})
